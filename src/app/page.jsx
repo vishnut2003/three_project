@@ -1,10 +1,8 @@
 'use client';
 
-import BoxModel from "@/components/BoxModel";
 import { Environment } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import CatModel from "@/components/CatModel";
-import ImageCard from "@/components/ImageCard/ImageCard";
 
 export default function Home() {
   return (
@@ -14,7 +12,6 @@ export default function Home() {
         <fog args={['black', 10, 70]} />
 
         <CatModel/>
-        <ImageCard/>
 
         <Environment 
         files="/environment_bg.hdr"
